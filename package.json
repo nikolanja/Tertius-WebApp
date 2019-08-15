@@ -1,0 +1,49 @@
+{
+  "name": "tertius",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "browserify-fs": "^1.0.0",
+    "email-validator": "^2.0.4",
+    "file-saver": "^2.0.0",
+    "firebase": "^5.7.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "jspdf": "^1.5.3",
+    "jspdf-customfonts": "0.0.4-rc.4",
+    "jszip": "^3.1.5",
+    "node-sass": "^4.11.0",
+    "payform": "^1.4.0",
+    "query-string": "^6.2.0",
+    "rasterizehtml": "^1.3.0",
+    "react": "^16.7.0",
+    "react-autosize-textarea": "^6.0.0",
+    "react-cookie": "^3.0.8",
+    "react-dom": "^16.7.0",
+    "react-medium-editor": "^1.8.1",
+    "react-modal": "^3.8.1",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.3",
+    "react-stripe-elements": "^2.0.3",
+    "redux": "^4.0.1",
+    "stripe-client": "^1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && echo '/*    /index.html   200' > build/_redirects",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

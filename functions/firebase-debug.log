@@ -1,0 +1,14 @@
+[debug] [2019-03-19T07:47:46.216Z] ----------------------------------------------------------------------
+[debug] [2019-03-19T07:47:46.219Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cjli1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2019-03-19T07:47:46.219Z] CLI Version:   6.4.0
+[debug] [2019-03-19T07:47:46.219Z] Platform:      win32
+[debug] [2019-03-19T07:47:46.219Z] Node Version:  v11.11.0
+[debug] [2019-03-19T07:47:46.220Z] Time:          Tue Mar 19 2019 08:47:46 GMT+0100 (Central European Standard Time)
+[debug] [2019-03-19T07:47:46.220Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-19T07:47:46.229Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-19T07:47:46.229Z] > authorizing via signed-in user
+[debug] [2019-03-19T07:47:46.229Z] [iam] checking project tertius-ios-firebase for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2019-03-19T07:47:46.231Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tertius-ios-firebase:testIamPermissions  
+
+[debug] [2019-03-19T07:47:47.397Z] <<< HTTP RESPONSE 200

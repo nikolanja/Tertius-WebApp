@@ -1,0 +1,272 @@
+@import '../../../common.scss';
+
+.subscribe {
+    margin-top: 14px;
+
+    .subscribe-content{
+        .logo {
+            img {
+                width: 32px;
+                height: 42px;
+            }
+        }
+
+        .title {
+            font-family: 'SF Pro Display Bold';
+            font-size: 22px;
+            line-height: 36px;
+        }
+
+        .desc {
+            font-family: 'SF Pro Display Regular';
+            font-size: 18px;
+            line-height: 24px;
+            color: #757575;
+        }
+
+        .plan {
+            text-align: left;
+            span.title {
+                font-family: 'SF Pro Display Regular';
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+
+            .content {
+                margin-top: 16px;
+                margin-bottom: 20px;
+
+                /* The container */
+                .container {
+                    display: inline;
+                    position: relative;
+                    padding-left: 35px;
+                    font-family: 'SF Pro Display Regular';
+                    cursor: pointer;
+                    font-size: 16px;
+                    line-height: 24px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    margin-right: 30px;
+
+                    /* Hide the browser's default radio button */
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                }
+                
+                /* Create a custom radio button */
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 18px;
+                    width: 18px;
+                    background-color: #eee;
+                    border: 1px solid gray;
+                    border-radius: 50%;
+                }
+                
+                /* On mouse-over, add a grey background color */
+                .container:hover input ~ .checkmark {
+                    background-color: #ccc;
+                }
+                
+                /* When the radio button is checked, add a blue background */
+                .container input:checked ~ .checkmark {
+                    background-color: white;
+                }
+                
+                /* Create the indicator (the dot/circle - hidden when not checked) */
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+                
+                /* Show the indicator (dot/circle) when checked */
+                .container input:checked ~ .checkmark:after {
+                    display: block;
+                }
+                
+                /* Style the indicator (dot/circle) */
+                .container .checkmark:after {
+                    top: 3px;
+                    left: 3px;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: #ff4500;
+                }
+            }
+        }
+
+        .payment{
+            text-align: left;
+
+            span.title {
+                font-family: 'SF Pro Display Regular';
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+            }
+
+            .content {
+                margin-top: 16px;
+                margin-bottom: 16px;
+
+                border: 1px solid #d9d9d9;
+                border-radius: 3px;
+                background: #ffffff;
+                padding: 22px 16px;
+
+                .payment-title {
+                    border: 3px solid #ff4500;
+                    border-width: 0 0 3px 0;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+
+                    span {
+                        font-family: 'SF Pro Display Regular';
+                        font-size: 15px;
+                        line-height: 24px;
+                        color: #ff4500;
+                    }
+                }
+
+                .membership-desc {
+                    p {
+                        font-family: 'SF Pro Display Regular';
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #757575;
+                        
+                        a {
+                            color: #757575;
+
+                            &:hover {
+                                color: #0099e5;
+                            }
+                        }
+                    }
+                }
+
+                .card-info {
+                    font-family: 'SF Pro Display Regular';
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    span {
+                        color: #757575;
+                    }
+
+                    input {
+                        margin-top: 5px;
+                        width: 100%;
+                        border-width: 0 0 1px 0;
+                        border-color: #d9d9d9;
+
+                        &:focus {
+                            outline: none !important;
+                        }
+                    }
+
+                    .credit-card-number{
+                        position: relative;
+                        width: 100%;
+
+                        input {
+                            width: calc(100% - 25px);
+                            padding-left: 30px;
+                            font-size: 12px;
+                        }
+
+                        .card-icon {
+                            position: absolute;
+                            top: 22px;
+                            left: 5px;
+                            font-size: 15px;
+                            
+                            i {
+                                color: #757575;
+                            }
+                        }
+                    }
+
+                    .exp-sec {
+                        margin-top: 10px;
+                        width: 100%;
+                        display: flex;
+
+                        .expiration {
+                            float: left;
+                            width: 45%;
+                            margin-right: 5%;
+                            input {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .security-code {
+                            width: 45%;
+                            margin-left: 5%;
+                            input {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+                .action {
+                    button {
+                        width: 235px;
+                        height: 37px;
+                        border: 1px solid #070707;
+                        border-radius: 3px;
+                        background: #292929;
+
+                        font-family: 'SF Pro Display Regular';
+                        font-size: 18px;
+                        color: #f8f8f8;
+                    }
+                }
+
+                .error-message {
+                    padding: 0 0 10px 0;
+                    
+                    span {
+                        color: #ff4500;
+                        font-family: 'SF Pro Display Regular';
+                        font-size: 14px;
+                    }
+                }
+
+                .loading-container {
+                    padding-bottom: 10px;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 496px) {
+    .subscribe-content {
+        padding-left: 23px;
+        padding-right: 23px;
+        width: calc(100% - 46px);
+    }
+}
+
+@media only screen and (min-width: 496px) {
+    .subscribe-content {
+        width : 448px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../../common.scss';
+
+.welcome {
+    min-height: $content-min-height;
+
+    span.title{
+        font-family: 'SF Pro Display Bold';
+        font-size: 42px;
+        letter-spacing: -0.01em
+    }
+
+    p.desc{
+        font-family: 'Calluna';
+        font-size: 21px;
+        line-height: 31px;
+
+        a {
+            color: #038930;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+
+    .btn-app-store {
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+		margin-top: 15px;
+    }
+}
